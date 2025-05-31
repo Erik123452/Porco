@@ -28,22 +28,22 @@
         #message {
             margin-top: 20px;
             font-size: 24px;
-            display: none; /* Скрываем сообщение по умолчанию */
+            display: none; 
         }
 
         h2 {
-            margin-bottom: 20px; /* Отступ между заголовком и кнопками */
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h2>Порко Чурка ?</h2> <!-- Заголовок над кнопками -->
+    <h2>Порко Чурка ?</h2> 
     <div class="container">
         <button id="button1" class="button">Да</button>
         <button id="button2" class="button">Нет</button>
     </div>
-    <div id="message">А я знал))</div> <!-- Новый элемент для сообщения -->
+    <div id="message">А я знал))</div> 
 
     <script>
         const button1 = document.getElementById('button1');
@@ -51,15 +51,15 @@
         const message = document.getElementById('message');
 
         button2.addEventListener('click', () => {
-            // Меняем координаты второй кнопки случайным образом
-            const randomX = Math.floor(Math.random() * 500) - 220; // смещение по X
-            const randomY = Math.floor(Math.random() * 300) - 200;  // смещение по Y
+            
+            const randomX = Math.floor(Math.random() * 500) - 220; 
+            const randomY = Math.floor(Math.random() * 300) - 200;  
             
             button2.style.transform = `translate(${randomX}px, ${randomY}px)`;
         });
 
         button1.addEventListener('click', () => {
-            message.style.display = 'block'; // Показываем сообщение
+            message.style.display = 'block'; 
         });
     </script>
 
